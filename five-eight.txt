@@ -1,0 +1,22 @@
+1. input all data: hair (name + level + color), mu (name + level), score, challenge type, ST, HA
+	- get data from ur own acc + other ppl! muses of covet results
+	- find a chart of hair/MU, comprehensive, so you can match
+	** note: hair color split by natural dark, natural light, dyed
+	a. come up with coding scheme
+2. data analysis
+	a. analyze best-scoring MU/hair by challenge type
+	b. any particularly well-scoring pairs
+3. website:
+	drop-down menus for
+		type: (coded types)
+			include descriptor paragraphs based on coding scheme
+		level: 
+			only output MU/hair below current lvl!
+	output: you should use ---
+		LARGE/COLOR
+		suggest: MU and hair image, names, levels, color, ST
+		this combination scores ___ on average on __type__ challenges
+		SMALLER/GREY
+		you may also consider (3) other choices, same descriptors
+		CONSIDER ADDING: HA... IF APPLICABLE
+		
