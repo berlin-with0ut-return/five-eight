@@ -1,0 +1,28 @@
+codings
+Asian: relating to Asian culture/customs
+	keywords: Chinese, Japanese, Korean, Indian, Vietamnese, Thai
+African: relating to African culture and customs
+	keywords: Africa, Egyptian
+bridal: relating to weddings
+	keywords: wedding, bride, marriage
+casual: a catch-all theme for most challenges that don't fall into a specific categories; mostly day-to-day activities such as shopping, cooking
+formal: relating to an important, usually public, event
+	keywords: formal, movie star, celebrity, soiree, party, luxury
+horror: relating to supernatural monsters and other phenomena
+	keywords: ghost, Frankenstein, witch, vampire, dead, zombie, goth, monster
+magical: relating to magic/supernatural phenomenon
+	keywords: 
+professional: relating to occupations and job-related activities
+	keywords: professional, lawyer, secretary, interview, teacherS
+punk: relating to punk rock and its culture
+	keywords: punk, rebel, edgy
+retro: referring to past fashion periods
+	keywords: retro, year numbers (50s, 60s, etc), steampunk, flapper
+royal: relating to royalty
+	keywords: royal, prince, princess, queen, king
+scifi: relating to space travel or other future technological advances
+	keywords: technology, futuristic, space, time travel
+Spanish: relating to Spain, or its culture and customs
+	keywords: Spain, flamenco
+sports: relating to fitness activities
+	keywords: sport, fitness, yoga, football, soccer, skating, gym, hiking, ballet, tennis

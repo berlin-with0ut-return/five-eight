@@ -19,4 +19,8 @@
 		SMALLER/GREY
 		you may also consider (3) other choices, same descriptors
 		CONSIDER ADDING: HA... IF APPLICABLE
+	hidden "see definitions" for category selections
+		have a challenge that doesn't fit these categories? contact us at ___
+	want to submit to our database?
+		form: hair, makeup, score, challenge name, ST
 		

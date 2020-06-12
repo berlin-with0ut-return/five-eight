@@ -1,0 +1,12 @@
+name: census-app
+title: census-app
+username:
+account: sfansf
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2447895
+bundleId: 3263052
+url: https://sfansf.shinyapps.io/census-app/
+when: 1591994977.15518
+asMultiple: FALSE
+asStatic: FALSE
