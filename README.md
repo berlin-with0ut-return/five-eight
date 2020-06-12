@@ -1,5 +1,5 @@
 # five-eight
-a data science project and web app that maximizes score for mobile game Covet Fashion
+a R-shiny based web app that uses data science to maximizes scores for the mobile game Covet Fashion
 
 # What is Five-Eight?
 Covet Fashion is a mobile game based in competitive *style challenges* against other players. As most top players know, the key to consitently scoring well is to analyze trending *makeup* (MU), *hairstyles* (HS), and *skin tones* (ST) for each look; several such Facebook groups are dedicated to this kind of reporting and analysis. However, manually analyzing trends can be both difficult and time-consuming. Based on data from thousands of looks across several years, *five-eight* attempts to automate the process of determining trends and allow players to score the coveted top look: 5.8 stars.
