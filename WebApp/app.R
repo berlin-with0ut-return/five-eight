@@ -42,6 +42,14 @@ ui <- fluidPage(
           position: absolute;
           left: 20px;
         }
+        #other_mu {
+          font-family: 'Roboto', sans-serif;
+          font-size: 8px;
+        }
+        #other_hs {
+          font-family: 'Roboto', sans-serif;
+          font-size: 8px;
+        }
         body {
             -moz-transform: scale(1.2, 1.2);
             zoom: 1.2; /* Other non-webkit browsers */
@@ -62,7 +70,7 @@ ui <- fluidPage(
             selectInput("chalType", label = h5("Choose your challenge type",
                                                style = "font-family: 'Raleway', sans-serif; font-weight: bold;"), 
                         choices = list("African", "Asian", "bridal",
-                                       "casual", "formal", "horror",
+                                       "casual", "Egyptian","formal", "horror", "Indian",
                                        "magical", "professional", "punk",
                                        "retro", "royal", "scifi", 
                                        "Spanish", "sports")
@@ -76,9 +84,11 @@ ui <- fluidPage(
             condition = "input.lvl > 0",
             textOutput("hs_nm"),
             textOutput("hs_avg"),
+            textOutput("other_hs"),
             br(),
             textOutput("mu_nm"),
             textOutput("mu_avg"),
+            textOutput("other_mu"),
             br(),
             textOutput("st_nm"),
             textOutput("st_avg"),
@@ -96,8 +106,9 @@ server <- function(input, output) {
     hs_recs <- reactive({
         get_hair(input$lvl, input$chalType)
     })
+    
     output$hs_nm <- renderText({
-        paste("Hairstyle: ", hs_recs()[1], "( Level ", hs_recs()[2], ")")
+      paste("Hairstyle:", hs_recs()[1], "( Level", hs_recs()[2], ")")
     })
     output$hs_avg <- renderText({ 
         paste("This hairstyle scores", hs_recs()[3], "on average in", input$chalType, "themed challenges")
@@ -112,6 +123,16 @@ server <- function(input, output) {
            height = "auto")
       
     }, deleteFile = FALSE)
+    output$other_hs <- renderText({
+      if (is.na(hs_recs()[4])) {
+        paste("Other suggestions: None")
+      } else if (is.na(hs_recs()[7])) {
+      paste("Other suggestions:", hs_recs()[4], "( Level", hs_recs()[5], ", average:", hs_recs()[6], ")")
+    } else {
+      paste("Other suggestions:", hs_recs()[4], "( Level", hs_recs()[5], ", average:", hs_recs()[6], "),",
+            hs_recs()[7], "( Level", hs_recs()[8], ", average:", hs_recs()[9], ")")
+    }
+    })
     
     mu_recs <- reactive({
         get_mu(input$lvl, input$chalType)
@@ -132,6 +153,16 @@ server <- function(input, output) {
            height = "auto")
       
     }, deleteFile = FALSE)
+    output$other_mu <- renderText({
+      if (is.na(mu_recs()[4])) {
+        paste("Other suggestions: None")
+      } else if (is.na(mu_recs()[7])) {
+        paste("Other suggestions:", mu_recs()[4], "( Level", mu_recs()[5], ", average:", mu_recs()[6], ")")
+      } else {
+        paste("Other suggestions:", mu_recs()[4], "( Level", mu_recs()[5], ", average:", mu_recs()[6], "),",
+              mu_recs()[7], "( Level", mu_recs()[8], ", average:", mu_recs()[9], ")")
+      }
+    })
     
     st_rects <- reactive({
         get_st(input$chalType)

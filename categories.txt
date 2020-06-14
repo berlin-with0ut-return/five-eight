@@ -26,3 +26,4 @@ Spanish: relating to Spain, or its culture and customs
 	keywords: Spain, flamenco
 sports: relating to fitness activities
 	keywords: sport, fitness, yoga, football, soccer, skating, gym, hiking, ballet, tennis
+egyptian, indian

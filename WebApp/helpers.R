@@ -42,7 +42,13 @@ get_hair <- function(lvl, chaltype) {
     best_hs <- sorted_hs[1, 2]
     lvl_hs <- sorted_hs[1, 3]
     avg_hs <- round(sorted_hs[1, 4], 2)
-    return(list(best_hs, lvl_hs, avg_hs))
+    hs2 <- sorted_hs[2, 2]
+    lvl2 <- sorted_hs[2, 3]
+    avg2 <- round(sorted_hs[2, 4], 2)
+    hs3 <- sorted_hs[3, 2]
+    lvl3 <- sorted_hs[3, 3]
+    avg3 <- round(sorted_hs[3, 4], 2)
+    return(list(best_hs, lvl_hs, avg_hs, hs2, lvl2, avg2, hs3, lvl3, avg3))
   }
 }
 
@@ -56,7 +62,13 @@ get_mu <- function(lvl, chaltype) {
     best_mu <- sorted_mu[1, 2]
     lvl_mu <- sorted_mu[1, 3]
     avg_mu <- round(sorted_mu[1, 4], 2)
-    return(list(best_mu, lvl_mu, avg_mu))
+    mu2 <- sorted_mu[2, 2]
+    lvl2 <- sorted_mu[2, 3]
+    avg2 <- round(sorted_mu[2, 4], 2)
+    mu3 <- sorted_mu[3, 2]
+    lvl3 <- sorted_mu[3, 3]
+    avg3 <- round(sorted_mu[3, 4], 2)
+    return(list(best_mu, lvl_mu, avg_mu, mu2, lvl2, avg2, mu3, lvl3, avg3))
   }
 }
 

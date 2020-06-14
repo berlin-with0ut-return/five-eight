@@ -5,8 +5,8 @@ account: sfansf
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2447863
-bundleId: 3263156
+bundleId: 3266689
 url: https://sfansf.shinyapps.io/five-eight/
-when: 1591996542.44971
+when: 1592095591.21972
 asMultiple: FALSE
 asStatic: FALSE
